@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Age Calculator - Sobuj Rahman</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container fade-in">
+
+        <h1 class="header-title">Age Calculator</h1>
+
+        
+
+        <div class="section">
+
+            <p class="label">Date of Birth</p>
+
+            <div class="input-group">
+
+                <input type="number" id="dobDay" placeholder="Day" oninput="autoTab(this, 'dobMonth', 2)">
+
+                <input type="number" id="dobMonth" placeholder="Month" oninput="autoTab(this, 'dobYear', 2)">
+
+                <input type="number" id="dobYear" placeholder="Year" oninput="autoTab(this, 'calculateBtn', 4)">
+
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <p class="label">Age at the Date of (Today's Date)</p>
+
+            <div class="input-group">
+
+                <input type="number" id="curDay" readonly>
+
+                <input type="number" id="curMonth" readonly>
+
+                <input type="number" id="curYear" readonly>
+
+            </div>
+
+        </div>
+
+        <button id="calculateBtn" class="bounce-hover">Calculate Age</button>
+
+        <div id="resultBox" class="results">
+
+            <p id="mainResult">Your age is: 0 Years, 0 Months, 0 Days</p>
+
+            <p id="statsResult">Age in Months: 0, Age in Weeks: 0, Age in Days: 0</p>
+
+            <p id="nextBirthday">Next Birthday: Not calculated yet</p>
+
+        </div>
+
+        <footer class="main-footer">
+
+            Developed by <strong>SOBUJ RAHMAN</strong>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
